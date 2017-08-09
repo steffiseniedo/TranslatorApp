@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace TranslatorApp
 {
@@ -10,9 +11,12 @@ namespace TranslatorApp
         }
 
 
-        public void TranslateButton_OnClicked(object sender)
+        async void TranslateButton_Clicked(object sender, EventArgs e)
 		{
-			Translator translator = new Translator();
+            Translator translator = new Translator();
+			var result = translator.Translate(Input.Text, "en");
+			//change the result text to the translated text
+            Result.Text = result;
 			
 		}
     }

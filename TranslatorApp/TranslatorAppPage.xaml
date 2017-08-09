@@ -16,10 +16,16 @@
         <Button x:Name = "TranslateButton"
                 Text = "Translate"
                 VerticalOptions = "Center" 
-                HorizontalOptions = "Center"/>
+                HorizontalOptions = "Center"
+                Clicked = "TranslateButton_Clicked"/>
 
 
-        <Label  x:Name = "TranslatedText"
+        <Label  x:Name = "Result"
+                FontSize="Large"
+                TextColor="Blue"/>
+
+        
+        <Label  x:Name = "Table"
                 FontSize="Large"
                 TextColor="Blue"/>
         

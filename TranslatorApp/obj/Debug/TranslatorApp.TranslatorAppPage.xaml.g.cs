@@ -11,7 +11,7 @@
 namespace TranslatorApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/steffimarie/Desktop/TranslatorApp/TranslatorApp/TranslatorAppPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/steffimarie/Desktop/GitHub/TranslatorApp/TranslatorApp/TranslatorAppPage.xaml")]
     public partial class TranslatorAppPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -21,14 +21,18 @@ namespace TranslatorApp {
         private global::Xamarin.Forms.Button TranslateButton;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label TranslatedText;
+        private global::Xamarin.Forms.Label Result;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label Table;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TranslatorAppPage));
             Input = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Input");
             TranslateButton = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Button>(this, "TranslateButton");
-            TranslatedText = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "TranslatedText");
+            Result = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "Result");
+            Table = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "Table");
         }
     }
 }
